@@ -32,3 +32,13 @@ btnWhen.addEventListener("click", function () {
         body.style.backgroundColor = "var(--darkBlack)";
     }
 })
+
+const fromInput= document.querySelector(".from-input")
+const fromButton= document.querySelector(".from-button")
+let elBtn = ""
+fromButton.addEventListener("click",function(event){
+    elBtn=event.pointerId
+})
+if(fromInput.value.trim()){
+    console.log(elBtn)
+}
